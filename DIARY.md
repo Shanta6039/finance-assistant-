@@ -23,3 +23,19 @@ needs error handling so it doesn't crash.
 <img width="1152" height="816" alt="gemini_test_success" src="https://github.com/user-attachments/assets/c54f4920-a28b-4f35-a2f0-e2cca48ed211" />
 
 Next: write my design steps before Sunday 4 October.
+
+## Week 1 — Session 2 (1 October 2026)
+
+Today, I completed the initial design steps for my Student Budget Checker app before starting the coding.
+
+**Step 1 (Problem):** I identified the target users, their budgeting problems and how my app could help them. I used Claude to review my answers and received suggestions to make the app's purpose clearer. I updated the final version to focus on CSV uploads, spending analysis and AI chat.
+
+**Step 2 (Inputs and outputs):** I listed the main inputs and outputs of my app. After reviewing my initial ideas with Claude, I decided to remove income and savings goals because my app focuses mainly on tracking expenses against a budget. I used Claude's updated version of Step 2, which also included possible errors and issues to consider when testing the app.
+
+**Step 3 (Worked example):** I calculated the spending totals myself using a calculator: Groceries 107.80, Transport 40.00 and Entertainment 41.99, giving an overall total of 189.79. With some help from Claude, I improved the example by showing how much each category was over or under its budget. I also fixed a formatting issue in Google Colab by using `\$` for dollar signs.
+
+**Step 4 (Pseudocode):** I wrote the pseudocode for my app using the suggested starter as a guide. I added the main steps, including starting and ending the program, calculating total expenses and asking users to enter their budgets again when the values are invalid. Claude helped me identify a few issues, and I revised the pseudocode to make the steps clearer and consistent with my app's purpose.
+
+**What I learned:** I learned that planning and calculating a worked example before coding can help me understand how the app should work. The calculated totals will also help me test whether my code produces the correct results.
+
+**Next week:** I plan to start coding the app by loading the CSV file, writing the budget calculation function and connecting the Gemini AI assistant.
