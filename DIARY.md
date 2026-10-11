@@ -63,3 +63,29 @@ Today I started coding my Student Budget Checker, following my Step 4 pseudocode
 <img width="1247" height="151" alt="image" src="https://github.com/user-attachments/assets/cce23742-0ecd-4862-aa55-d0326a47b46e" />
 
 **Next session:** connect the Gemini AI assistant to my budget results and start the Gradio interface.
+
+## Week 2 — Session 2 (11 October 2026)
+
+Today I connected the AI assistant to my budget results and built the app interface.
+
+**What I built:**
+- `format_summary`: turns my check_budget results into readable text with dollar amounts (e.g. "Groceries: spent $107.80 of $100.00 budget (OVER by $7.80)").
+- `ask_budget_assistant`: my AI assistant "Budget Buddy" using Gemini. A system instruction gives it a persona and rules, and every question includes the student's spending summary so its answers use their real numbers.
+- A Gradio interface where a student can upload a CSV, type their budgets, check their budget and chat with Budget Buddy.
+
+**AI use:** I asked Claude to write each part step by step and explain the code. I ran and tested every part myself and asked questions when I was unsure.
+
+**Testing the assistant:** I tested 3 kinds of questions:
+- "Where am I spending too much?" – it used my real numbers correctly.
+- "Who won the football last night?" (off-topic) – it politely said it only helps with budgeting and suggested budgeting questions instead.
+- "help" (unclear) – it gave a short overview and then asked which category I wanted help with.
+
+> Budget Buddy's answer: "You went over by $11.99 (spending $41.99 instead of your $30.00 budget)."
+
+I checked every number in its answers against my Step 3 worked example and they were all correct. It did not make up any numbers.
+
+**Testing the app:** I used the app like a student would: uploaded the sample CSV, typed my budgets, checked my budget and asked questions. Then I tried to break it with no file, an empty budget box, "Groceries=abc" and a negative budget. Each one showed a friendly ⚠️ message instead of crashing.
+
+**Problem I noticed:** When Gemini was busy, the assistant took a long time to answer because it waits and retries several times before giving up. I will look at making this faster in the final week.
+
+**Next week:** write assert tests, add the README and sample data file, and submit.
