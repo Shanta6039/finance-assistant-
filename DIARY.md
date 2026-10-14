@@ -89,3 +89,15 @@ I checked every number in its answers against my Step 3 worked example and they 
 **Problem I noticed:** When Gemini was busy, the assistant took a long time to answer because it waits and retries several times before giving up. I will look at making this faster in the final week.
 
 **Next week:** write assert tests, add the README and sample data file, and submit.
+
+## Week 3 — Session 1 (14 October 2026)
+
+Today I started testing my app with awkward input.
+
+**Bug I found and fixed:** I tested what happens if a student types their budget categories in lowercase (e.g. "groceries=100"). The app showed "No budget set" for every category, even though budgets were entered, because Python treats "groceries" and "Groceries" as different words. I fixed this by adding .title() in load_transactions and parse_budgets so category names always match. I ran the test again and it then showed OVER / WITHIN BUDGET correctly.
+
+**AI use:** Claude suggested testing lowercase input and gave me the code for the test and the fix. I ran the test myself, saw the bug happen, made the two edits, and checked that it worked afterwards.
+
+**What I learned:** My app worked perfectly with my own sample data, but a real student could easily type in lowercase. Testing with awkward input finds problems that normal testing misses.
+
+**Next session:** assert tests, README, final reflection and submit.
