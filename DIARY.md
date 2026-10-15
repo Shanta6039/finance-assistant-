@@ -101,3 +101,27 @@ Today I started testing my app with awkward input.
 **What I learned:** My app worked perfectly with my own sample data, but a real student could easily type in lowercase. Testing with awkward input finds problems that normal testing misses.
 
 **Next session:** assert tests, README, final reflection and submit.
+
+## Week 3 — Session 2 (15 October 2026)
+
+Today I finished my project.
+
+**What I did:**
+- Added assert tests in 5 groups: normal case (my Step 3 worked example), edge cases, bad inputs, budget text (including my lowercase bug fix), and the summary and app button. All tests passed.
+- Added a "Bugs I found and fixed" table and my Step 6 testing summary to the notebook.
+- Uploaded sample_transactions.csv so anyone can try the app.
+- Wrote the README with what the app does, sample input and output, and how to run it.
+
+**AI use:** Claude gave me the test code, the README structure and step-by-step instructions. I ran all the tests myself, checked the expected numbers against my own hand calculations, and edited the README.
+
+## Final reflection
+
+**What went well:** Doing the worked example by hand in Week 1 was very useful. It gave me exact numbers to check my code against, and every result matched.
+
+**What was hard:** Gemini was often busy (503 errors), which made the assistant slow. I learned that an app must handle problems outside my control with try/except and friendly messages.
+
+**How I used AI:** I used Claude as a guide. It explained each piece of code before I used it, and I asked questions when I didn't understand. I made my own decisions too. For example, I removed income and savings goals from my design to keep the app focused, and I chose to skip some optional changes to save time.
+
+**What I would improve with more time:** make the assistant faster when Gemini is busy, let students compare months, and add a chart of spending by category.
+
+**What I learned:** Planning before coding (problem, inputs/outputs, worked example, pseudocode) made coding much easier. Testing with awkward input found a real bug (lowercase categories) that normal testing missed.
